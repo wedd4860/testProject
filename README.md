@@ -1,4 +1,4 @@
-orderAdmin Solution
+orderAdmin solution
 -------------
 * 개인용 파일입니다.
 * 주문서 프로그램 입니다.
@@ -12,8 +12,8 @@ init
 경로 : include/init.php
 루트 폴더를 기입(line 79) : define('_FOLDER_ROOT', '')
 
-암호화 키 변경(line 58) : define("_client_id", "jvh8QiFHp9OXURYhBE_n")
-암호화 키 변경(line 59) : define("_client_secret", "FBk5WFJrcO")
+암호화 키 변경(line 58) : define("_client_id", "jvh8QiFHpedcdeq2BE_n")
+암호화 키 변경(line 59) : define("_client_secret", "F32112JrcO")
 
 개발용 아이피 주소 기입(line 50) : $_SERVER["SERVER_ADDR"] == '127.0.0.1'
 개발용 db name 기입(line 52) : define("_DB_NAME", "")
@@ -39,7 +39,7 @@ permission
 * templates 디렉토리 권한 : 755, 766 / 파일 권환 : 644
 * download 디렉토리 권한 : 755, 766
 
-directory info
+directory
 -------------
 > /action
 * (back-end) db의 직접적인 처리를 담당하는 디렉토리
@@ -60,14 +60,14 @@ directory info
 > /templates
 * (front-end) templates를 사용하여 view 처리
 
-directory info
+file
 -------------
 > /include/init.php
 * (back-end) 가장 먼저 로드 되며 프로그램 설정 정의
 > /include/init.utils.php
 * (back-end) php 관련 utils 정의
 
-error info
+error
 -------------
 > db 설치 확인
 ```
@@ -103,7 +103,7 @@ yum install php-mcrypt
 확인방법 : ini_set('display_errors', true);
 ```
 
-library info
+library
 -------------
 * (back-end)Smarty-3.1.16
 * (back-end)PHPExcel version 2.1
