@@ -101,6 +101,11 @@ yum install php-mcrypt
 > 그외 내부서버 오류
 ```
 확인방법 : ini_set('display_errors', true);
+`````
+> smarty 에러(컴파일)
+```
+경로 : vi /etc/httpd/conf/httpd.conf
+확장자 추가 : AddType application/x-httpd-php .php .html .htm .inc .tpl
 ```
 
 library
