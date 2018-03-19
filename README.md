@@ -6,7 +6,8 @@ orderAdmin Solution
 * PHP 5.5 or higher 요구
 
 init
--------------> db 설치 확인
+-------------
+> db 설치 확인
 ```
 경로 : include/init.php
 루트 폴더를 기입(line 79) : define('_FOLDER_ROOT', '')
