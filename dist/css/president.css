@@ -1,0 +1,43 @@
+/* CSS Document */
+@charset "utf-8";
+
+* { margin:0; padding:0;}
+header, footer, nav, section, article, aside { display:block;}
+body { font-family: 'Nanum Gothic', sans-serif; font-size:12px; line-height:2em; color:#121212;background:#f6f8f9}
+a { color:#121212; text-decoration:none;}
+img { border:0; vertical-align:top;}
+ul { list-style:none;}
+input { vertical-align:top;}
+
+/*clearfix*/
+.cf {}
+.cf:after { content:""; display:block; clear:both;}
+
+.report .row{margin:0;padding:0}
+
+/*header*/
+#header{width:100%;background:#fff;border-bottom: 1px solid #edf1f2;box-shadow: 0 1px 3px 0 rgba(0,0,0,0.15);}
+#header h2{line-height:2em;padding:5px;font-size:28px;text-align:center;margin:0;}
+/*content*/
+#content{width:100%;background:#f6f8f9;line-height:2.6em;}
+#content .report{background:#fff;margin-top:10px;padding:10px;}
+#content .report h3{font-size:18px;margin-top:5px;}
+#content .report .price{font-size:14px;padding:0;}
+#content .report .total-price{font-size:18px;font-weight:900;text-align:right;}
+#content .report .price .curent{font-weight:900;}
+#content .report .before{color:#717171}
+
+#content .report .price p span{display:inline-block;}
+#content .report .price p span:last-child{text-align:right;width:60%}
+
+.table-bordered.table {border: 1px solid #f4f4f4;}
+
+.table-bordered.table tr,.table-bordered.table td,.table-bordered.table th{border: 1px solid #f4f4f4;}
+.table-bordered.table th{text-align:center !important;}
+.table-bordered.table td:first-child{text-align:center;}
+.table-bordered.table td.goods-infoEa{text-align:center;}
+.table-bordered.table td:last-child{text-align:right;}
+
+#header .header-close{position:absolute;top:0;right:10px;font-size:28px;font-weight:600;line-height:66px;}
+
+.report .report-subTitle{line-height:1.2em;text-align:right;color: #aaa;}
