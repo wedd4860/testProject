@@ -48,17 +48,6 @@ if($row = $database->dataFetch()){
 if($totalCount > 0){
 	//게시글 리스트
 	$bbsList = array();
-	/*2018-01-05 :: 할인가 삭제 요청 :
-	$sql = "
-		SELECT orderTrans.order_seq,fair.fair_title,orderTrans.order_customer,orderTrans.order_mobile,orderTrans.order_tot_orgprice,orderTrans.order_tot_goodsprice,orderTrans.order_tot_discount,orderTrans.order_tot_settleprice,orderTrans.order_regdt,
-		CASE WHEN (coalesce(orderTrans.order_status,0)=1) THEN '-'
-				WHEN (coalesce(orderTrans.order_status,0)=2) THEN '취소'
-				ELSE '-' END as order_status		
-			FROM at_order_trans orderTrans
-			LEFT JOIN at_fair_info fair ON orderTrans.order_fair_seq = fair.fair_seq
-		where (orderTrans.order_status = 1 or orderTrans.order_status = 2)
-	";
-	*/
 	$sql = "
 		SELECT orderTrans.order_seq,fair.fair_title,orderTrans.order_customer,orderTrans.order_mobile,orderTrans.order_tot_orgprice,orderTrans.order_tot_settleprice,orderTrans.order_regdt,
 		CASE WHEN (coalesce(orderTrans.order_status,0)=1) THEN '-'

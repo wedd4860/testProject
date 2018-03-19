@@ -43,29 +43,6 @@ if($mode == 'mod'){
 		pageRedirect('goodsList.php');
 	}
 
-/*
-	//상품옵션
-	$sqlOption = "
-		SELECT COUNT(option_seq) AS option_bbs_count
-		FROM at_goods_option_info
-		WHERE option_status = 1
-	";
-	$database->prepare($sqlOption);
-	if($row = $database->dataFetch()){$optionCount = $row['option_bbs_count'];}
-	if($optionCount > 0){
-		//옵션 리스트
-		$bbsList = array();
-		$sqlOption = "
-		select option_seq, option_color_title, option_color_code
-			from at_goods_option_info
-			where option_status = 1 and option_goods_seq= :option_goods_seq
-		";
-		$database->prepare($sqlOption);
-		$database->bind(':option_goods_seq', $bbsSeq);
-		$optionBbsList = $database->dataAllFetch();
-	}
-*/
-
 	//전시회별 상품 가격정보
 	getRequestVar('p');
 	getRequestVar('s_ea');

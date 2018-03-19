@@ -17,16 +17,6 @@ if(empty($date)){
 }
 
 $bbsList = array();
-/*
-$sql = "
-	SELECT DATE_FORMAT(orderInfo.order_regdt,'%Y-%m-%d') AS order_date, goods.goods_title, SUM(orderItem.item_ea) as ea, SUM(orderItem.item_goods_price) AS price
-	FROM at_order_trans orderInfo
-	LEFT JOIN at_order_item orderItem ON orderInfo.order_seq = orderItem.item_order_seq
-	LEFT JOIN at_goods_info goods ON orderItem.item_goods_seq = goods.goods_seq
-	WHERE orderInfo.order_status = 1 AND (orderInfo.order_regdt >= :std_date AND orderInfo.order_regdt <= :end_date) AND orderInfo.order_status = 1	
-	GROUP BY goods.goods_title
-";
-*/
 $sql = "
 	SELECT cate.category_title, DATE_FORMAT(orderInfo.order_regdt,'%Y-%m-%d') AS order_date, goods.goods_title, SUM(orderItem.item_ea) AS ea, SUM(orderItem.item_goods_price) AS price
 		FROM at_order_trans orderInfo

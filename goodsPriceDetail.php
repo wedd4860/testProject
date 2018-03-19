@@ -33,13 +33,7 @@ if($mode == 'mod'){
 
 	//게시글 정보
 	if(!empty($bbsSeq)){
-		/* 2018-01-05 결제가 삭제 요청 :: 요청자 : 박진경
-		$sql = "
-			select price_seq, price_fair_seq, price_goods_seq, price_goods_consumer, price_goods_price, price_goods_supply
-			from at_goods_price_history
-			where price_status = 1 and price_seq = :price_seq
-		";
-		*/
+
 		$sql = "
 			select price_seq, price_fair_seq, price_goods_seq, price_goods_consumer, price_goods_supply
 			from at_goods_price_history
@@ -74,14 +68,6 @@ if($mode == 'mod'){
 		$priceCount = $row['bbs_count'];
 	}
 	if($priceCount > 0){
-		/* 2018-01-05 결제가 삭제 요청 :: 요청자 : 박진경
-		$sqlPrice="
-			SELECT price_goods_consumer,price_goods_price,price_goods_supply FROM at_goods_price_history
-				WHERE price_goods_seq = :price_goods_seq AND price_status = 1
-				ORDER BY price_seq DESC
-				LIMIT 1
-		";
-		*/
 		$sqlPrice="
 			SELECT price_goods_consumer,price_goods_supply FROM at_goods_price_history
 				WHERE price_goods_seq = :price_goods_seq AND price_status = 1
