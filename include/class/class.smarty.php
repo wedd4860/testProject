@@ -8,7 +8,7 @@ class MySmarty extends Smarty {
 
   public function __construct() {
     parent::__construct();
-    $this->template_dir = _TEMPLATES_ROOT.'desing';
+    $this->template_dir = _TEMPLATES_ROOT.'design';
     $this->compile_dir  = _TEMPLATES_ROOT.'compile';
     $this->config_dir   = _TEMPLATES_ROOT.'configs';
     $this->cache_dir    = _TEMPLATES_ROOT.'cache';
