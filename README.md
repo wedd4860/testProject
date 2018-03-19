@@ -1,9 +1,9 @@
 orderAdmin solution
 -------------
-* 개인용 파일입니다.
+* 개인용 파일 입니다.
 * 주문서 프로그램 입니다.
 * LAMP (Linux, Apache, MySQL, PHP) 환경을 추천 드립니다.
-* PHP 5.5 or higher 요구
+* PHP 5.5 or higher 요구 합니다.
 
 init
 -------------
