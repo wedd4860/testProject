@@ -13,7 +13,7 @@ class MySmarty extends Smarty {
     $this->config_dir   = _TEMPLATES_ROOT.'configs';
     $this->cache_dir    = _TEMPLATES_ROOT.'cache';
     $this->default_modifiers = array('escape:"htmlall"');
-    $this->assign('title', 'order admin');
+    $this->assign('web_title', 'order admin');
   }
 
   public function d() {
