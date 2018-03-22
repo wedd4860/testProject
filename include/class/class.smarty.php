@@ -13,10 +13,11 @@ class MySmarty extends Smarty {
     $this->config_dir   = _TEMPLATES_ROOT.'configs';
     $this->cache_dir    = _TEMPLATES_ROOT.'cache';
     $this->default_modifiers = array('escape:"htmlall"');
-    $this->assign('app_title', 'Smarty 예제');
+    $this->assign('title', 'order admin');
   }
 
   public function d() {
     parent::display(basename($_SERVER['PHP_SELF'], '.php').'.tpl');
   }
 }
+?>
