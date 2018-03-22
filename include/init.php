@@ -222,9 +222,10 @@ class LOGIN_INFO {
 	function LOGIN_INFO() {
 		$cookie = new COOKIE("MEMBER_LOGIN_COOKIE");
 
+		//쿠키 정보가 있는지 없는지
 		$decrypt_cookie_msg = $cookie->getCookie();
 
-		if ( $decrypt_cookie_msg == null ) {		// 로그인 정보가 없을 경우.
+		if ( $decrypt_cookie_msg == null ) {		// 쿠키 정보가 없을 경우 로그인 정보가 없음.
 			$cookie->deleteCookie();
 		} else {
 			$cookie_info = array();
@@ -279,6 +280,7 @@ $LOGIN_INFO = new LOGIN_INFO();
  * ####################################
  */
 function getRequestVar($varStr, $defaultValue = null, $isNumber = false) {
+	//가변 변수
 	global $$varStr;
 
 	if ($_SERVER['REQUEST_METHOD'] == "GET") {
